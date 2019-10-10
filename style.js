@@ -15,13 +15,15 @@ w3 = 250;
 h3 = 400;
 function preload() {
   img = loadImage('IMG_0147.jpg');
- // img2 = loadImage('IMG_0149.jpg');
-  //img3 = loadImage('IMG_0152.jpg');
+  img2 = loadImage('IMG_0149.jpg');
+ // img3 = loadImage('IMG_0152.jpg');
 }
 function setup() {
   createCanvas(displayWidth, displayHeight);
   // scale(.25);
-  // image(img,x,y,w,h);
+   image(img,0,0);
+   image(img2,300,300);
+   image(img3,400,400);
   // get the width and height of the image so we can center it initially
 //  bounds = img.imgBounds(image, 0, 0, imageSize);
 //  x = width / 2 - bounds.w / 2;
@@ -35,7 +37,7 @@ function draw() {
 
   //get its bounding box
   
-  image(img, x, y, w, h);
+  //image(img, x, y, w, h);
   //image(img2, x2, y2, w2, h2);
   //image(img3, x3, y3, w3, h3);
   // bounds = img.imgBounds(image, x, y, imageSize);
